@@ -10,6 +10,12 @@
 ## USAGE:
 **IMPORTANT:** You will first need to install Linux on your 3DS, use this [provided optimized distro](https://github.com/AtexBg/3ds-fbge/releases/download/v0.1.0/linux_3ds-fbge_install.zip) and extract it to the root of your SD card.
 
+To compile this code, you need :
+
+A computer running Linux (or WSL on Windows)
+the packages `build-essential`, `make` and `arm-linux-gnueabi-gcc` (ARM cross-compiler) installed
+
+
 Then compile the project on the "*src/*" folder using the `make` command, or just download the binary in the releases tab, then execute `/switch.sh` (little system script to mount SD and populate **/dev**), then **cd** to /mnt (aka your SD card) and execute the program with your rom file as "-f" argument (example: `./gb3ds -f pokemon_red.gb`)
 
 ## CONTROLS:
@@ -36,3 +42,4 @@ Basic games (Like *Tetris* or *Pokemon Red/Blue*) works perfectly (saves include
 - Make (almost) every game work
 
 - Some more settings
+
