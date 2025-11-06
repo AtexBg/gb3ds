@@ -1,5 +1,5 @@
 # gb3ds
-## A GameBoy Emulator for the 3DS running Linux.
+## A GameBoy Emulator for the 3DS running under Linux.
 
 -----------------
 
@@ -13,7 +13,7 @@
 Then compile the project on the "*src/*" folder using the `make` command, or just download the binary in the releases tab, then execute `/switch.sh` (little system script to mount SD and populate **/dev**), then **cd** to /mnt (aka your SD card) and execute the program with your rom file as "-f" argument (example: `./gb3ds -f pokemon_red.gb`)
 
 ## CONTROLS:
-Same as the GameBoy, but the Select button isn't mapped by the kernel so you'd have to use **X** instead, also click on **L** to quit emulation and **R** to reload game.
+Same as the GameBoy, but the Select button isn't mapped by the kernel so you'd have to use **X** instead, also click on **L** to leave emulation and **R** to reload game.
 
 ## COMPATIBILITY:
 
@@ -21,12 +21,12 @@ Same as the GameBoy, but the Select button isn't mapped by the kernel so you'd h
 
 Basic games (Like *Tetris* or *Pokemon Red/Blue*) works perfectly (saves included), GameBoy Color games like *Pokemon Crystal* or *PK Pinball* could not work or have glitched graphics.
 
-###### Little fun fact: the emulation is so accurate and working that i managed to do an ACE glitch and finish PokemonRed in 1'30 on my own emulator :3
+###### Little fun fact: the emulation is so accurate and working that i managed to do an ACE glitch and finish PokemonRed in 1m30 on my own emulator :3
 
 ![tetris is the best GB game imo](pics/pic1.jpg)
 
 ## TODO:
-- Add OST menu with the following features:
+- Add OSD menu with the following features:
 	- Change current color palette
 	- Change background border
 	- Change screen size/position
@@ -34,4 +34,5 @@ Basic games (Like *Tetris* or *Pokemon Red/Blue*) works perfectly (saves include
 	
 - ~Add sound support~ (the 3ds Linux kernel DOESN'T support sound)
 - Make (almost) every game work
-- Some settings
+
+- Some more settings
